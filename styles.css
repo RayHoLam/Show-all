@@ -21,46 +21,53 @@ nav {
     padding: 20px; /* Add padding */
 }
 
+
 .search-bar-container {
     background-color: #3a3a3a;
     padding: 5px;
     display: flex;
-    align-items: center;
-    width: 300px;
+    align-items: center; /* Vertically center align */
+    width: 50px; /* Initial width when inactive */
     height: 50px;
     border-radius: 50px;
-    margin: 30px;
-    transition: width 1.5s;
+    transition: width 0.3s ease; /* Smooth transition for width */
+    overflow: hidden; /* Prevent overflow of content */
+    position: relative; /* Enable positioning for child elements */
+}
+
+.search-bar-container.active {
+    width: 300px; /* Expanded width when active */
 }
 
 #magnifier {
     width: 30px;
+    height: 30px; /* Set height for centering */
     cursor: pointer;
+    margin-left: 10px; /* Space from the left */
+    margin-right: 10px; /* Space from the right */
 }
 
 .input {
     background-color: transparent;
     border: none;
-    margin: 0 10px; /* Reduce side margin */
-    width: 100%;
+    width: 100%; /* Full width when expanded */
     outline: none;
     color: rgb(100, 100, 100);
-    transition: width 1s;
-    transition-delay: 0.5s;
+    display: none; /* Hide input initially */
 }
 
-.active.search-bar-container {
-    width: 50px;
+.search-bar-container.active .input {
+    display: block; /* Show input when active */
 }
 
-.active .input {
-    width: 0;
+i{
+  font-size: 30px;
 }
 
 .counter-container {
     display: flex;
     align-items: center; /* Vertically center align */
-    margin-left: 20px; /* Add left margin */
+    margin-left: 10px; /* Set left margin to 10px */
     color: #296ca8;
 }
 
