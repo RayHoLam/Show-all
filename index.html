@@ -56,10 +56,10 @@
 const searchBarContainerEl = document.querySelector(".search-bar-container");
 const magnifierEl = document.getElementById("magnifier");
 const searchInputEl = document.querySelector(".input");
-const projects = document.querySelectorAll(".project-title"); 
+const projects = document.querySelectorAll(".project-title");
 
 magnifierEl.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent event from bubbling up
+    event.stopPropagation(); 
     searchBarContainerEl.classList.toggle("active");
     if (searchBarContainerEl.classList.contains("active")) {
         searchInputEl.style.display = 'block'; 
@@ -70,6 +70,7 @@ magnifierEl.addEventListener("click", (event) => {
     }
 });
 
+// Close search bar when clicking outside
 document.addEventListener("click", (event) => {
     if (!searchBarContainerEl.contains(event.target) && !magnifierEl.contains(event.target)) {
         searchBarContainerEl.classList.remove("active");
@@ -79,21 +80,23 @@ document.addEventListener("click", (event) => {
 });
 
 searchInputEl.addEventListener("keyup", (event) => {
-    const query = event.target.value.toLowerCase(); 
-    let found = false;
+    if (event.key === "Enter") {
+        const query = event.target.value.toLowerCase(); 
+        let found = false;
 
-    projects.forEach(project => {
-        const title = project.textContent.toLowerCase();
-        const projectLink = project.closest(".project");
+        projects.forEach(project => {
+            const title = project.textContent.toLowerCase();
+            const projectLink = project.closest(".project");
 
-        if (title.includes(query) && query !== "") {
-            projectLink.scrollIntoView({ behavior: "smooth", block: "center" });
-            found = true;
+            if (title.includes(query) && query !== "") {
+                projectLink.scrollIntoView({ behavior: "smooth", block: "center" });
+                found = true;
+            }
+        });
+
+        if (!found) {
+           
         }
-    });
-
-    if (!found && query === "") {
-        
     }
 });
 
