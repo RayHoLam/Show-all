@@ -57,18 +57,17 @@ const searchBarContainerEl = document.querySelector(".search-bar-container");
 const magnifierEl = document.getElementById("magnifier");
 const searchInputEl = document.querySelector(".input");
 
-// Ensure the search bar is initially closed
-searchBarContainerEl.classList.remove("active"); // Optional: Explicitly set inactive
+searchBarContainerEl.classList.remove("active"); 
 
 magnifierEl.addEventListener("click", (event) => {
-    event.stopPropagation(); // Prevent event from bubbling up
+    event.stopPropagation(); 
     searchBarContainerEl.classList.toggle("active");
     if (searchBarContainerEl.classList.contains("active")) {
-        searchInputEl.style.display = 'block'; // Show input when active
-        searchInputEl.focus(); // Focus the input
+        searchInputEl.style.display = 'block';
+        searchInputEl.focus(); 
     } else {
-        searchInputEl.value = ''; // Clear input when not active
-        searchInputEl.style.display = 'none'; // Hide input when inactive
+        searchInputEl.value = ''; 
+        searchInputEl.style.display = 'none'; 
     }
 });
 
@@ -76,8 +75,8 @@ magnifierEl.addEventListener("click", (event) => {
 document.addEventListener("click", (event) => {
     if (!searchBarContainerEl.contains(event.target) && !magnifierEl.contains(event.target)) {
         searchBarContainerEl.classList.remove("active");
-        searchInputEl.value = ''; // Clear input when closed
-        searchInputEl.style.display = 'none'; // Hide input when closed
+        searchInputEl.value = ''; 
+        searchInputEl.style.display = 'none'; 
     }
 });
 
