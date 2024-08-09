@@ -2,7 +2,7 @@
     --main-purple: #1b1b32;
     --main-blue: #45567d;
     --main-gray: #303841;
-    --main-white: #ffffff; /* Adding white variable */
+    --main-white: #ffffff; 
 }
 
 body {
@@ -16,9 +16,9 @@ nav {
 
 .container {
     display: flex;
-    justify-content: space-between; /* Align items to the sides */
-    align-items: center; /* Vertically center align */
-    padding: 20px; /* Add padding */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
 
@@ -26,38 +26,38 @@ nav {
     background-color: #3a3a3a;
     padding: 5px;
     display: flex;
-    align-items: center; /* Vertically center align */
-    width: 50px; /* Initial width when inactive */
+    align-items: center; 
+    width: 50px; 
     height: 50px;
     border-radius: 50px;
-    transition: width 0.3s ease; /* Smooth transition for width */
-    overflow: hidden; /* Prevent overflow of content */
-    position: relative; /* Enable positioning for child elements */
+    transition: width 0.3s ease; 
+    overflow: hidden; 
+    position: relative; 
 }
 
 .search-bar-container.active {
-    width: 300px; /* Expanded width when active */
+    width: 300px; 
 }
 
 #magnifier {
     width: 30px;
-    height: 30px; /* Set height for centering */
+    height: 30px; 
     cursor: pointer;
-    margin-left: 10px; /* Space from the left */
-    margin-right: 10px; /* Space from the right */
+    margin-left: 10px; 
+    margin-right: 10px; 
 }
 
 .input {
     background-color: transparent;
     border: none;
-    width: 100%; /* Full width when expanded */
+    width: 100%;
     outline: none;
     color: rgb(100, 100, 100);
-    display: none; /* Hide input initially */
+    display: none; 
 }
 
 .search-bar-container.active .input {
-    display: block; /* Show input when active */
+    display: block; 
 }
 
 i{
@@ -66,8 +66,8 @@ i{
 
 .counter-container {
     display: flex;
-    align-items: center; /* Vertically center align */
-    margin-left: 10px; /* Set left margin to 10px */
+    align-items: center; 
+    margin-left: 10px; 
     color: white;/* #f5f5dc */
 }
 
