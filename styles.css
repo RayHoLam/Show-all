@@ -1,0 +1,104 @@
+:root {
+    --main-purple: #1b1b32;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+    --main-white: #ffffff; /* Adding white variable */
+}
+
+body {
+    background-color: #2d2d2d;
+    color: white;
+}
+
+nav {
+    background-color: #1a1a1a;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Align items to the sides */
+    align-items: center; /* Vertically center align */
+    padding: 20px; /* Add padding */
+}
+
+.search-bar-container {
+    background-color: #3a3a3a;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    margin: 30px;
+    transition: width 1.5s;
+}
+
+#magnifier {
+    width: 30px;
+    cursor: pointer;
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    margin: 0 10px; /* Reduce side margin */
+    width: 100%;
+    outline: none;
+    color: rgb(100, 100, 100);
+    transition: width 1s;
+    transition-delay: 0.5s;
+}
+
+.active.search-bar-container {
+    width: 50px;
+}
+
+.active .input {
+    width: 0;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center; /* Vertically center align */
+    margin-left: 20px; /* Add left margin */
+    color: #296ca8;
+}
+
+.counter {
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+/* PROJECTS SECTION */
+.projects-section {
+    text-align: center;
+    padding: 10rem 2rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+}
+
+.project {
+    background: var(--main-purple);
+}
+
+.project-image {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    font-size: 2rem;
+    padding: 2rem 0.5rem;
+    color: white;
+    text-decoration: none; 
+    border: none;
+}
