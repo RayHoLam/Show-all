@@ -59,29 +59,28 @@ const searchInputEl = document.querySelector(".input");
 const projects = document.querySelectorAll(".project-title");
 
 magnifierEl.addEventListener("click", (event) => {
-    event.stopPropagation(); 
+    event.stopPropagation();
     searchBarContainerEl.classList.toggle("active");
     if (searchBarContainerEl.classList.contains("active")) {
-        searchInputEl.style.display = 'block'; 
-        searchInputEl.focus(); 
+        searchInputEl.style.display = 'block';
+        searchInputEl.focus();
     } else {
-        searchInputEl.value = ''; 
-        searchInputEl.style.display = 'none'; 
+        searchInputEl.value = '';
+        searchInputEl.style.display = 'none';
     }
 });
 
-// Close search bar when clicking outside
 document.addEventListener("click", (event) => {
     if (!searchBarContainerEl.contains(event.target) && !magnifierEl.contains(event.target)) {
         searchBarContainerEl.classList.remove("active");
-        searchInputEl.value = ''; 
-        searchInputEl.style.display = 'none'; 
+        searchInputEl.value = '';
+        searchInputEl.style.display = 'none';
     }
 });
 
 searchInputEl.addEventListener("keyup", (event) => {
     if (event.key === "Enter") {
-        const query = event.target.value.toLowerCase(); 
+        const query = event.target.value.toLowerCase();
         let found = false;
 
         projects.forEach(project => {
@@ -95,7 +94,7 @@ searchInputEl.addEventListener("keyup", (event) => {
         });
 
         if (!found) {
-           
+            // Handle no matches, e.g. show a message
         }
     }
 });
