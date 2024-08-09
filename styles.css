@@ -68,7 +68,7 @@ i{
     display: flex;
     align-items: center; /* Vertically center align */
     margin-left: 10px; /* Set left margin to 10px */
-    color: #296ca8;
+    color: white;/* #f5f5dc */
 }
 
 .counter {
