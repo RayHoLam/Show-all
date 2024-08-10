@@ -115,4 +115,6 @@ i {
     color: white;
     text-decoration: none; 
     border: none;
+    overflow-wrap: break-word;
+    max-width: 90%;
 }
