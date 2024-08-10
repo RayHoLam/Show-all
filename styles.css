@@ -104,9 +104,16 @@ i{
 
 .project-title {
     font-size: 2rem;
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
     color: white;
     text-decoration: none; 
     border: none;
+}
+
+.project-section > p{
+    text-decoration: none; 
+    border: none;
     margin: 20px 10px;
+    text-align: center;
+    color: white;
 }
