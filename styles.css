@@ -9,7 +9,15 @@ body {
     background-color: #2d2d2d;
     color: white;
 }
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
 
+    .search-bar-container {
+        width: 100px;
+    }
+}
 nav {
     background-color: #1a1a1a;
 }
@@ -53,10 +61,13 @@ nav {
     outline: none;
     color: rgb(100, 100, 100);
     display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .search-bar-container.active .input {
     display: block; 
+    opacity: 1;
 }
 
 i {
@@ -78,7 +89,7 @@ i {
 /* PROJECTS SECTION */
 .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
+    padding: 20px;
 }
 
 .projects-grid {
@@ -93,6 +104,7 @@ i {
 
 .project {
     background: var(--main-purple);
+    margin: 10px;
 }
 
 .project-image {
