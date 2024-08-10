@@ -116,3 +116,7 @@ i {
     text-align: center;
     color: white;
 }
+
+.projects-section p {
+    color: white; 
+}
