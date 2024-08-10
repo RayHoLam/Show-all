@@ -93,6 +93,7 @@ i {
 
 .project {
     background: var(--main-purple);
+    min-height: 20rem;
 }
 
 .project-image {
@@ -107,6 +108,5 @@ i {
     color: white;
     text-decoration: none; 
     border: none;
-    margin-bottom: 10px;
 }
 
