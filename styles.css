@@ -21,7 +21,6 @@ nav {
     padding: 20px;
 }
 
-
 .search-bar-container {
     background-color: #3a3a3a;
     padding: 5px;
@@ -60,15 +59,15 @@ nav {
     display: block; 
 }
 
-i{
-  font-size: 30px;
+i {
+    font-size: 30px;
 }
 
 .counter-container {
     display: flex;
     align-items: center; 
     margin-left: 10px; 
-    color: white;/* #f5f5dc */
+    color: white;
 }
 
 .counter {
@@ -110,10 +109,14 @@ i{
     border: none;
 }
 
-.project-section p{
+.project-section p {
     text-decoration: none; 
     border: none;
     margin: 20px 10px;
     text-align: center;
+    color: white;
+}
+
+.projects-section p {
     color: white;
 }
