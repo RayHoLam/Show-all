@@ -78,7 +78,6 @@ i {
 /* PROJECTS SECTION */
 .projects-section {
     text-align: center;
-    padding: 10rem 2rem;
 }
 
 .projects-grid {
@@ -88,12 +87,10 @@ i {
     width: 100%;
     max-width: 1280px;
     margin-bottom: 6rem;
-    min-height: 20rem;
 }
 
 .project {
     background: var(--main-purple);
-    min-height: 20rem;
 }
 
 .project-image {
