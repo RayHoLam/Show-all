@@ -87,8 +87,8 @@ i {
     grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
-    margin: 0 auto;
     margin-bottom: 6rem;
+    min-height: 20rem;
 }
 
 .project {
@@ -97,9 +97,10 @@ i {
 }
 
 .project-image {
-    height: calc(100% - 6.8rem);
+    height: calc(90% - 6.8rem);
     width: 100%;
     object-fit: cover;
+    margin-bottom: 0px;
 }
 
 .project-title {
