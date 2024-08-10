@@ -109,12 +109,3 @@ i {
     border: none;
 }
 
-.project-section p {
-    font-size: 1rem;
-    padding: 2rem 0.5rem;
-    color: white;
-    text-decoration: none; 
-    border: none;
-    overflow-wrap: break-word;
-    max-width: 90%;
-}
