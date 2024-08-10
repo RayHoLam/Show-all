@@ -100,10 +100,11 @@ i {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(800px, 1fr));
-    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
     width: 100%;
     max-width: 1280px;
+    min-hight: 600px;
     padding: 20px;
     margin-bottom: 6rem;
     overflow-wrap: break-word;
