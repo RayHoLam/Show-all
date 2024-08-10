@@ -102,10 +102,11 @@ i {
 }
 
 .project-title {
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 2rem 0.5rem;
     color: white;
     text-decoration: none; 
     border: none;
+    margin-bottom: 10px;
 }
 
