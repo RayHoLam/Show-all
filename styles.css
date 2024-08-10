@@ -77,34 +77,50 @@ i {
 
 /* PROJECTS SECTION */
 .projects-section {
-    text-align: center;
+    padding: 20px;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    grid-gap: 4rem;
+    grid-template-columns: 1fr; 
     width: 100%;
-    max-width: 1280px;
-    margin-bottom: 6rem;
+  max-width:900px;
+    grid-gap: 6rem;
+    margin: 5rem auto;
+    justify-content: center;
 }
 
+
 .project {
-    background: var(--main-purple);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-decoration: none;
+    color: white; 
+    border: 1px solid #34495e;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    background-color: black;
+  padding: 50px;
+}
+
+.project:hover {
+    transform: scale(1.03);
 }
 
 .project-image {
-    height: calc(90% - 6.8rem);
     width: 100%;
-    object-fit: cover;
-    margin-bottom: 0px;
+    height: auto;
+}
+
+.project-section p {
+    font-size: 2rem;
+    text-align: left;
 }
 
 .project-title {
-    font-size: 3rem;
-    padding: 2rem 0.5rem;
-    color: white;
-    text-decoration: none; 
-    border: none;
+    padding: 0px;
+    font-size: 3.5rem;
 }
-
